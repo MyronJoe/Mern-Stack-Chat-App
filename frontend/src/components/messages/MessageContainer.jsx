@@ -15,7 +15,7 @@ const MessageContainer = () => {
   }, [setSelectedConversation])
 
   return (
-    <div className='md:min-w-[450px] flex flex-col'>
+    <div className='md:min-w-[450px] flex flex-col h-[50vh] md:h-[100%] relative pt-20 md:pt-5'>
 
       {!selectedConversation ? (
 
@@ -25,7 +25,7 @@ const MessageContainer = () => {
 
         <>
           {/* Header */}
-          <div className='bg-slate-400 px-4 py-2 mb-2'>
+          <div className='bg-slate-400 px-4 py-2 mb-2 fixed top-0 w-full z-50'>
             <span className='label-text'>To:</span>{" "}
             <span className='text-gray-700 font-bold'>{selectedConversation.fullName}</span>
           </div>
